@@ -1,0 +1,19 @@
+\babel@toc {serbian}{}\relax 
+\contentsline {section}{\numberline {1}Uvod}{3}{section.1}%
+\contentsline {section}{\numberline {2}Uticaj na životnu sredinu}{3}{section.2}%
+\contentsline {section}{\numberline {3}Princip rada Bitcoin-a}{3}{section.3}%
+\contentsline {section}{\numberline {4}Osnovna uputstva}{4}{section.4}%
+\contentsline {section}{\numberline {5}Engleski termini i citiranje}{4}{section.5}%
+\contentsline {section}{\numberline {6}Slike i tabele}{5}{section.6}%
+\contentsline {section}{\numberline {7}Prvi naslov}{5}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Prvi podnaslov}{5}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Drugi podnaslov}{6}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Drugi naslov}{6}{section.8}%
+\contentsline {subsection}{\numberline {8.1}... podnaslov}{6}{subsection.8.1}%
+\contentsline {section}{\numberline {9}n-ti naslov}{6}{section.9}%
+\contentsline {subsection}{\numberline {9.1}... podnaslov}{6}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}... podnaslov}{6}{subsection.9.2}%
+\contentsline {section}{\numberline {10}Poslednji naslov}{6}{section.10}%
+\contentsline {section}{\numberline {11}Zaključak}{6}{section.11}%
+\contentsline {section}{Literatura}{6}{section.11}%
+\contentsline {section}{\numberline {A}Dodatak}{7}{appendix.Alph1}%
