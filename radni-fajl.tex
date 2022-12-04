@@ -21,7 +21,7 @@
 
 \title{Bitcoin u 2022. godini\\ \small{Seminarski rad u okviru kursa\\Tehničko i naučno pisanje\\ Matematički fakultet}}
 
-\author{Lazar\\ @alas.matf.bg.ac.rs\and Tanja\\@alas.matf.bg.ac.rs\and Aleksa\\@alas.matf.bg.ac.rs\and Miljan Lješnjak\\mi22359@alas.matf.bg.ac.rs }
+\author{Lazar\\ @alas.matf.bg.ac.rs\and Tanja\\@alas.matf.bg.ac.rs\and Aleksa Marković\\mi20244@alas.matf.bg.ac.rs\and Miljan Lješnjak\\mi22359@alas.matf.bg.ac.rs }
 \date{21.~novembar 2022.}
 \maketitle
 
@@ -36,14 +36,70 @@ U ovom tekstu je ukratko prikazana osnovna forma seminarskog rada. Obratite paž
 \label{sec:uvod}
 Kada budete predavali seminarski rad, imenujete datoteke tako da sadrže temu seminarskog rada, kao i prezimena članova grupe. Predaja seminarskih radova biće isključivo preko veb forme, a NE slanjem mejla. Link na formu će biti dat u okviru obaveštenja na strani kursa. Vodite računa da prilikom predavanja seminarskog rada predate samo one fajlove koji su neophodni za ponovno generisanje pdf datoteke. To znači da pomoćne fajlove, kao što su .log, .out, .blg, .toc, .aux i slično, \textbf{ne treba predavati}.
 
-\section{Uticaj na životnu sredinu}
-\label{sec:uticaj_na_zivotnu_sredinu}
-Potvrđivanje transakcija od strane učesnika bitkoin blokčeina zahteva koriščenje hardvera i velike količine električne energije. S obzirom da se više od 60\% električne energije proizvodi iz fosilnih goriva, bitkoin dovodi do emitovanja značajne količine gasova staklene bašte.  Procenjuje se da je bitkoin 2018. godine bio odgovoran za 0.1\% svetske količine gasova staklene bašte. Ovaj problem postaje sve veći sa porastom popularnosti bitkoina.
+\section{Princip rada Bitcoin-a}
+\label{sec:princip_rada}
 
-Procenjuje se da bitkoin godišnje utroši oko 45 teravat-sati električne energije, što je prevedno u emitovanje ugljenika približno količini ugljenika koju emituju čitave države, poput Jordana ili Sri Lanke.
+Bitkoin \textbf{(eng. Bitcoin)} je izgradjen na distribuiranom digitalnom zapisu koji se zove Blokčejn \textbf{(eng. Blockchain)} (Slika \ref{fig:Blockchain}). Kao što naziv implicira, blokčejn predstavlja povezano telo podataka, sastavljeno od jedinica koje se nazivaju blokovi. Blokovi sadrže informacije o svakoj transakciji, uključujući datum i vreme, ukupnu vrednost, kupca i prodavca i jedinstveni identifikacioni kod za svaku razmenu. Unosi su nanizani hronološkim redom, stvarajući digitalan lanac blokova.
+\\
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.15]{Blockchain.jpg}
+\end{center}
+\caption{Blockchain}
+\label{fig:Blockchain}
+\end{figure}
+
+\newpage
+Jednom kada se blok doda u blokčejn, on postaje dostupan svima koji žele da ga vide, delujući kao javna knjiga transakcija kriptovaluta.
+\\
+Blokčejn je decentralizovan, što znači da ga ne kontroliše nijedna organizacija. Niko ga ne poseduje, ali svako može da ga koristi i da doprinese njegovom razvoju. Kako ga različiti ljudi ažuriraju, kopija koju pojedinac poseduje se takodje ažurira.
+\\
+\\
+Iako ideja da svako može da uredjuje blokčejn može zvučati rizično, to je zapravo ono što Bitcoin čini pouzdanim i sigurnim.
+\\
+\\
+\\
+Da bi blok trasakcije bio dodat Bitcoin blok lancu, mora da bude verifikovan od strane velikog broja vlasnika Bitcoin-a, a za svakog korisnika koristi se jedinsveni verifikacioni kod.
+\\
+\\
+Verifikacioni kodovi su dugi, nasumični brojevi, što njihovo lažiranje ili zloupotrebu predstavlja izuzetno teškim. Nivo statističke nasumičnosti blokčejn verificionih kodova, koji su potrebni za svaku transakciju, u velikoj meri smanjuje rizik da svako može da vrši razne zloupotrebe i lažne bitcoin transakcije.
 
 
+\clearpage
+\section{Socioekonomski uticaj Bitcoin-a}
 
+\subsection{Energija}
+
+Rudarenje bitcoin-a zahteva mašine sa puno procesorske snage, pa je samim tim velika potrošnja energije neophodna da bi se hardver poput grafičke kartice pokretao, iako su novije komponente sve više i više energetski efikasne. Pored mašina, rudari i kompanije za rudarenje sa velikim sistemima često imaju potrebu za jakim uređajima za rashlađivanje koje potpomažu performanse. Energija koja se troši prilikom rudarenja bitcoin-a raste zajedno sa bitcoin mrežom.
+
+Gledajući energiju koja se godišnje potroši na rudarenje bitcoin-a, možemo videti da ona prevazilazi količine koje godišnje potroše čitave države. Bitcoin je 2019. godine potrošio oko 87.1 TWh\footnote{Teravat-sat} električne energije, što je više nego što je te godine potrošila Belgija.  \cite{energijapotrosnja}
+
+
+Ovolika potrošnja energije ima mnogo posledica. Mapa rudarenja bitcoin-a u periodu 2019-2020, na osnovu geolokacije rudara ukazuje da je skoro 70\% rudarenja rađeno u Kini. \cite{energijakina}
+
+Kako se Kina najviše oslanja na energiju dobijenu iz fosilnih goriva, može se reći da bitcoin dovodi do emitovanja značajne količine gasova staklene bašte.
+
+Ova otkrića imala su negativan efekat na reputaciju bitcoin-a, pošto sve više ljudi brine o klimatskim promenama i preferira zelenu energiju. Jedan od izazova za bitcoin biće potrošnja energije i prelaženje na čistije i održivije energije.
+
+
+\subsection{Cene i zalihe hardverda }
+
+Grafičke kartice jedna su od najčešćih hardverskih komponenti koje se koriste za rudarenje bitcoin-a. Većina rudara koristi više od jedne grafičke kartice za njihov sistem, a česta je i pojava čitavih farmi (industrijski objekti namenjeni rudarenju). To je neophodno da bi rudarenje uopšte bilo isplativo i iz istog razloga rudari teže da nabave najnovije kartice po njihovom izlasku.
+
+Ovo je jedan od razloga zbog kojih postoji nestašica grafičkih kartica, i to je problem koji se znatno pogoršava sa porastom popularnosti bitcoin-a i generalno kriptovaluta. Najnovije i najjače grafičke kartice većinski kupuju kompanije specijalizovane za rudarenje i individualni rudari. Maloprodaje iskorišćavaju činjenicu da proizvođači ne mogu da ispune ogromnu potražnju, te podižu cene do čak tri puta više od preporučene.
+
+Bočni efekat ovog problema je veliki uticaj na polovno tržište grafičkih kartica. Kako nema grafičkih kartica u zalihama, rudari se okreću ovom tržištu i masovno kupuju polovne kartice, s obzirom da je često potrebno više starijih modela grafičkih kartica da bi bile isplative koliko i najnoviji modeli. Ovo iskorišćavaju i ljudi koji prodaju svoje korišćene kartice da podignu cene do te mere, da ih prodaju za više para nego što su ih platili nove.
+
+Sve ovo skoro onemogućava prosečnom potrošaču da kupi grafičku karticu. U pokušaju da oslabe ove efekte, proizvođači uvode razne mere. NVIDIA, jedna od najvećih proizvođača grafičkih kartica, odlučila je da krene sa proizvodnjom grafičkih kartica specijalizovanih za rudarenje. Takođe je umanjila performanse rudarenja novih grafičkih kartica, koje su prvenstveno namenjene za video igrice, tako što im je umanjila hash rate. Ovo je dovelo do kritika od strane potrošača, na račun toga da NVIDIA svoju pažnju posvećuje grafičkim karticama namenjenim za rudarenje, dok stare linije ostavlja po strani. Takođe su ove odluke kritikovane da nove grafičke kartice neće imati preprodajnu vrednost i da će biti jednokratne.
+
+\subsection{Monetarni sistem i politika}
+
+Trenutno bitcoin skoro da nema uticaj na monetarne sisteme, s obzirom da je tržišna kapitalizacija bitcoin-a u svom vrhuncu bila oko 1.2 biliona američkih dolara, što je više od 5 puta manje od tržišne kapitalizacije bankarskog tržišta. Takođe, čak i centralne banke koje eksperimentišu sa kriptovalutama ne planiraju da koriste blokchain za njihove projekte, jer ga smatraju nestabilnim za infrastrukturu nacionalnih valuta. Kako se bitcoin oslanja na blokchain to ga čini nepogodnim, i samim tim neće imati uticaj na buduće planove monetarnog sistema.
+
+Neke vlade se osećaju ugroženo od strane bitcoin-a iz razloga što bitcoin nema centralnu vlast i zato što može da destabilizuje autoritet centralnih banaka ili čak i samih vlada. Anonimnost koju pruža bitcoin može se koristiti za zaobilaženje raznih kontrola, pranje novca ili ilegalnu kupovinu. Zbog toga političari neretko ukazuju na probleme i mane bitcoin-a, poput potrošnje energije, sa ciljem da pokvari poverenje ljudi u njega. Sa druge strane, neki političari biraju da kritikuju način na koji se bitcoin oporezuje i razmenjuje sa ciljem da odvrate ljude od investiranja. To ne ide u prilog bitcoin-u, koji još uvek većina investitora smatra za rizičnu investiciju.
+
+
+\clearpage
 
 \section{Osnovna uputstva}
 Vaš seminarski rad mora da sadrži najmanje jednu sliku, najmanje jednu tabelu i najmanje tri reference u spisku literature. \textbf{Dužina seminarskog rada treba da bude:}
@@ -262,6 +318,10 @@ Ovde pišem zaključak.
 \fi
 
 \begin{thebibliography}{9}
+
+\bibitem{energijapotrosnja} Alex de Vries. \emph{Bitcoin’s energy consumption is underestimated: A market dynamics approach}. Energy Res. Social Sci., vol. 70, Dec. 2020.
+
+\bibitem{energijakina} Alex de Vries. \emph{IEA (2019), Bitcoin energy use - mined the gap}.  IEA, Paris, https://www.iea.org/commentaries/bitcoin-energy-use-mined-the-gap 
 
 \bibitem{laski2009software} J. Laski and W. Stanley. \emph{Software Verification and Analysis}. Springer- Verlag, London, 2009.
 
