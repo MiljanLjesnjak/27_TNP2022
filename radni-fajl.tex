@@ -22,7 +22,7 @@
 
 \title{Bitcoin u 2022. godini\\ \small{Seminarski rad u okviru kursa\\Tehničko i naučno pisanje\\ Matematički fakultet}}
 
-\author{Lazar\\ @alas.matf.bg.ac.rs\and Tanja Damnjanović\\mi19377@alas.matf.bg.ac.rs\and Aleksa Marković\\mi20244@alas.matf.bg.ac.rs\and Miljan Lješnjak\\mi22359@alas.matf.bg.ac.rs }
+\author{Lazar Ristivojević\\mi21272@alas.matf.bg.ac.rs\and Tanja Damnjanović\\mi19377@alas.matf.bg.ac.rs\and Aleksa Marković\\mi20244@alas.matf.bg.ac.rs\and Miljan Lješnjak\\mi22359@alas.matf.bg.ac.rs }
 \date{21.~novembar 2022.}
 \maketitle
 
@@ -40,7 +40,7 @@ Poslednjih decenija nagli razvoj tehnologije i interneta omogućio je početak e
 \section{Istorija i nastanak}
 \subsection{Početak}
 Kriptovaluta je oblik digitalnog novca. Za stvaranje i beleženje njenih transakcija koriste se kriptografski mehanizmi koji omogućavaju različitim korisnicima koji nemaju poverenje jedni u druge da veruju sistemu. Bitkoin je prvi primer kriptovalute. Jedinice valute zvane bitkoin koriste  se za prenos vrednosti među korisnicima u bitkoin mreži. Predstavljen je 2008. godine sa člankom pod nazivom ``Bitcoin: A Peer-to-Peer Electronic Cash System'' čiji je autor poznat samo pod pseudonimom  ``Satoshi Nakamoto''. Sistem peer-to-peer znači da korisnici mogu trgovati direktno, bez posrednika. Namera je bila ostvariti kontrolu nad finansijama stvaranjem stabilne, sigurne, svetski prihvatljive valute. 
-Početkom 2009. godine i prvi bitkoini se puštaju u promet. Primalac prve bitkoin transakcije je bio Hal Finej. Finej je preuzeo bitkoin softver na datum izlaska softvera, i 12. januara 2009. godine je primio 10 bitkoina od Nakamota. Prva poznata komercijalna transakcija se dogodila 22. maja 2010. godine kada je Lazlo Hanjec kupio 2 pice iz Papa Džon picerije za 10,000 bitkoina. Danas bitkoin zajednica proslavlja taj datum kao dan pice. 
+Početkom 2009. godine i prvi bitkoini se puštaju u promet. Primalac prve bitkoin transakcije je bio Hal Finej. Finej je preuzeo bitkoin softver na datum izlaska softvera, i 12. januara 2009. godine je primio 10 bitkoina od Nakamota. \cite{istorija} Prva poznata komercijalna transakcija se dogodila 22. maja 2010. godine kada je Lazlo Hanjec kupio 2 pice iz Papa Džon picerije za 10,000 bitkoina. Danas bitkoin zajednica proslavlja taj datum kao dan pice. 
 Identitet autora ostaje nepoznat a neke popularne pretpostavke su da je to tim stručnjaka  ili osoba koja se povukla da bi zaštitila svoju privatnost i pre povlačenja iz javnosti 2010. godine prepustila glavnu ulogu Gavinu Andresenu koji je sad vođa projekta. Tokom godina nekoliko osoba je tvrdilo da su pravi Satoshi Nakamoto ali nijedna nije mogla da obezbedi dovoljan dokaz da podrži tu tvrdnju.
 
 \subsection{Uspon bitkoina}
@@ -58,7 +58,7 @@ Prvih godina, bikoin nije imao značajnu vrednost a aktivnosti su bile slabe i u
 \section{Princip rada Bitkoina}
 \label{sec:princip_rada}
 
-Bitkoin je izgradjen na distribuiranom digitalnom zapisu koji se zove Blokčejn \textbf{(eng. Blockchain)}. Kao što naziv implicira, blokčejn predstavlja povezano telo podataka, sastavljeno od jedinica koje se nazivaju blokovi. Blokovi sadrže informacije o svakoj transakciji, uključujući datum i vreme, ukupnu vrednost, kupca i prodavca i jedinstveni identifikacioni kod za svaku razmenu. Unosi su nanizani hronološkim redom, stvarajući digitalan lanac blokova.\cite{princip_rada} U tabeli \ref{tab:tabela_blok} su prikazane informacije koje se čuvaju u blokovima.
+Bitkoin je izgrađen na distribuiranom digitalnom zapisu koji se zove blokčejn \textbf{(eng. blockchain)}. Kao što naziv implicira, blokčejn predstavlja povezano telo podataka, sastavljeno od jedinica koje se nazivaju blokovi. Blokovi sadrže informacije o svakoj transakciji, uključujući datum i vreme, ukupnu vrednost, kupca i prodavca i jedinstveni identifikacioni kod za svaku razmenu. Unosi su nanizani hronološkim redom, stvarajući digitalan lanac blokova.\cite{princip_rada} U tabeli \ref{tab:tabela_blok} su prikazana 2 susedna bloka i informacije koje se čuvaju u njima.
 \\
 
 
@@ -96,17 +96,15 @@ List of Transactions \\ \hline
 \end{center}
 \end{table}
 
-Jednom kada se blok doda u blokčejn, on postaje dostupan svima koji žele da ga vide, delujući kao javna knjiga transakcija kriptovaluta.
+Jednom kada se blok doda u blokčejn, on postaje dostupan svima koji žele da ga vide, delujući kao javna knjiga transakcija.
 \\
-Blokčejn je decentralizovan, što znači da ga ne kontroliše nijedna organizacija. Niko ga ne poseduje, ali svako može da ga koristi i da doprinese njegovom razvoju. Kako ga različiti ljudi ažuriraju, kopija koju pojedinac poseduje se takodje ažurira.
+Blokčejn je decentralizovan, što znači da ga ne kontroliše nijedna organizacija. Svako može da ga koristi i da doprinese njegovom razvoju. Kako ga različiti ljudi ažuriraju, kopija koju pojedinac poseduje se takođe ažurira.
 
-Iako ideja da svako može da uredjuje blokčejn može zvučati rizično, to je zapravo ono što bitkoin čini pouzdanim i sigurnim.
+Iako ideja da svako može da uređuje blokčejn može zvučati rizično, to je zapravo ono što bitkoin čini pouzdanim i sigurnim.
 \\
 \\
-Da bi blok trasakcije bio dodat bitkoin blok lancu, mora da bude verifikovan od strane velikog broja vlasnika bitkoina, a za svakog korisnika koristi se jedinsveni verifikacioni kod.
-\\
-\\
-Verifikacioni kodovi su dugi, nasumični brojevi, što njihovo lažiranje ili zloupotrebu predstavlja izuzetno teškim. Nivo statističke nasumičnosti blokčejn verificionih kodova, koji su potrebni za svaku transakciju, u velikoj meri smanjuje rizik da svako može da vrši razne zloupotrebe i lažne bitkoin transakcije.
+Da bi blok transakcije bio dodat u blokčejn, mora da bude verifikovan od strane velikog broja vlasnika bitkoina, a za svakog korisnika koristi se jedinsveni verifikacioni kod.\cite{verifikacija}
+Verifikacioni kodovi su dugi, nasumični brojevi, što njihovo lažiranje ili zloupotrebu predstavlja izuzetno teškim. Nivo statističke nasumičnosti blokčejn verifikacionih kodova, koji su potrebni za svaku transakciju, u velikoj meri smanjuje rizik da se vrše razne zloupotrebe i lažne bitkoin transakcije.
 
 
 \section{Socioekonomski uticaj bitkoina}
@@ -171,7 +169,12 @@ Međutim kako sve više ljudi i biznisa prihvata bitkoin, njegov potencijal kao 
 
 \begin{thebibliography}{9}
 
+
+\bibitem{istorija} Chohan, Usman W. \emph{A history of bitcoin}. Available at SSRN 3047875 (2022)
+
 \bibitem{princip_rada} Nakamoto Satoshi. \emph{Bitcoin: A Peer-to-Peer Electronic Cash System}. bitcoin.org
+
+\bibitem{verifikacija} Chaudhary, Kaylash \emph{Modeling and verification of the bitcoin protocol.} arXiv preprint arXiv:1511.04173 (2015).
 
 \bibitem{energijapotrosnja} Alex de Vries. \emph{Bitcoin’s energy consumption is underestimated: A market dynamics approach}. Energy Res. Social Sci., vol. 70, Dec. 2020.
 
